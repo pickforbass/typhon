@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background: linear-gradient(135deg, #166352 17%,#1c89aa 85%);
+}
+
+h1, h2, h3 {
+    font-family: 'Righteous', cursive;
+    color: #ffea3e;
+}
+
+.card-title {
+    color: #166352;
+}
+
+
+ul {
+    list-style-type: none;
+    display: flexbox;
+}
