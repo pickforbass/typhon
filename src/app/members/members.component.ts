@@ -8,8 +8,12 @@ import { MEMBERS } from '../members';
   styleUrls: ['./members.component.scss']
 })
 export class MembersComponent {
-
   members = MEMBERS;
+  selectedMember?: Member;
+
+  getMember(member: Member): void {
+    this.selectedMember = member;
+  }
 
   }
 

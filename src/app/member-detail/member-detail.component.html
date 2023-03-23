@@ -1,0 +1,17 @@
+<div  *ngIf="member">
+    <h2>Détails sur {{member.nom }}</h2>
+    <div>
+        <p>
+            <label for="nom-membre">NOM: </label>
+            <input id="nom-membre" [(ngModel)]="member.nom" placeholder="nom du membre">
+        </p>
+        <p>
+            <label for="box-membre">BOX: </label>
+            <input id="box-membre" [(ngModel)]="member.box" placeholder="box du membre">
+        </p>
+        <p>
+            <label for="def-membre">DEF: </label>
+            <input id="def-membre" [(ngModel)]="member.def" placeholder="def du membre">
+        </p>
+    </div>
+</div>
