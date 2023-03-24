@@ -3,22 +3,22 @@
 
 
 <div class="py-5">
-    <h2 class=" mx-5 px-5">Membres</h2>
+    <h2 class="col-5 mx-5 px-5 border-start border-bottom border-warning">Membres</h2>
     
     <ul class="container-fluid row hidden-md-up justify-content-center">
 
         <li class="card col-md-2 m-2" *ngFor="let member of members">
-            <div class="m-2 p-2" style="width: 18rem;">
+            <div class="m-2 p-2">
                 <div class="card-block">
                     <h4 class="card-title">{{ member.nom }} </h4>
-                    <h6 class="card-subtitle text-muted">BOX :<span>{{ member.box }}M</span></h6>
+                    <p class="card-subtitle text-muted">BOX :<span>{{ member.box }}M</span></p>
                     <p class="card-text p-y-1">DEF <span>{{ member.def }}K</span></p>
                     <button href="#" class="btn btn-primary" (click)="getMember(member)">Editer</button>
                 </div>   
-                
-            </div>
+            </div>  
         </li>
-
     </ul>
+
+    <app-member-detail [member]="selectedMember"></app-member-detail>
 
 </div>

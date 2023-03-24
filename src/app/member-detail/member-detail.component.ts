@@ -7,8 +7,7 @@ import { Member } from '../member';
   styleUrls: ['./member-detail.component.scss']
 })
 export class MemberDetailComponent {
+ 
   @Input() member?: Member;
-  
-  
 
 }
