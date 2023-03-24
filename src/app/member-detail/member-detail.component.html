@@ -1,7 +1,7 @@
 
     <section *ngIf="member" id="member-detail" class="position-absolute top-0 start-0 w-100 h-100" >
-        <div class="col-6 h-50 position-absolute top-50 start-50 translate-middle bg-light-subtle rounded-4 p-5">
-            <h2 class="text-center">Détails sur {{member.nom }}</h2>
+        <div class="col-6 position-absolute top-50 start-50 translate-middle bg-light-subtle rounded-4 py-5">
+            <h2 class="text-center mb-5">Détails sur {{member.nom }}</h2>
             <div>
                 <p class="d-flex justify-content-around">
                     <label for="nom-membre" class="col-3">NOM: </label>
@@ -18,6 +18,9 @@
                     <input id="def-membre" [(ngModel)]="member.def" placeholder="def du membre"
                             class="col-4">
                 </p>
+            </div>
+            <div class="d-flex justify-content-center mt-2">
+                <button class="btn btn-primary" (click)="closeMember()">Valider</button>
             </div>
         </div>
     </section>

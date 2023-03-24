@@ -10,4 +10,8 @@ export class MemberDetailComponent {
  
   @Input() member?: Member;
 
+  closeMember(): void{
+    this.member = undefined;
+  }
+
 }
